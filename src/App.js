@@ -44,7 +44,7 @@ function App() {
       }
 
       const responseData = await response.json();
-
+      console.log(responseData.message);
       // Add the bot's response to the chat
       setMessages((prevMessages) => [
         ...prevMessages,
