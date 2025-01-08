@@ -31,8 +31,9 @@ function App() {
     setIsProcessing(true);
 
     try {
+
       // Make the API call to the backend
-      let response = await fetch("http://localhost:7076/Api/GetApiResponse", {
+      let response = await fetch("https://3tifgyyh6c.execute-api.ap-south-1.amazonaws.com/dev/GetApiResponse", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messagefrombody: userMessage.toString() }),

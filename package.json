@@ -2,6 +2,8 @@
   "name": "hackathonchatbot",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:5000",
+  "homepage": "https://smart-coder-nilesh.github.io/Freepress/",
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
