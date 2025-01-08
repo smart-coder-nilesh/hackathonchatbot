@@ -43,12 +43,12 @@ function App() {
         throw new Error("API call failed");
       }
 
-      const responseData = await response.text();
+      const responseData = await response.json();
 
       // Add the bot's response to the chat
       setMessages((prevMessages) => [
         ...prevMessages,
-        { sender: "bot", text: responseData },
+        { sender: "bot", text: responseData.message },
       ]);
     } catch (error) {
       // Handle API error
