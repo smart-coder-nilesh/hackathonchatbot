@@ -35,10 +35,12 @@ function App() {
       // Make the API call to the backend
       let response = await fetch("https://3tifgyyh6c.execute-api.ap-south-1.amazonaws.com/dev/GetApiResponse", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+           "Content-Type": "application/json",
+          "Access-Control-Allow-Origin":"https://smart-coder-nilesh.github.io" },
         body: JSON.stringify({ messagefrombody: userMessage.toString() }),
       });
-
+      
       if (!response.ok) {
         throw new Error("API call failed");
       }
