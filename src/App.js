@@ -33,11 +33,10 @@ function App() {
     try {
 
       // Make the API call to the backend
-      let response = await fetch("https://3tifgyyh6c.execute-api.ap-south-1.amazonaws.com/dev/GetApiResponse", {
+      let response = await fetch("https://mevpskgvab.execute-api.ap-south-1.amazonaws.com/prod/getlambdaresponse", {
         method: "POST",
         headers: {
-           "Content-Type": "application/json",
-          "Access-Control-Allow-Origin":"https://smart-coder-nilesh.github.io" },
+           "Content-Type": "application/json"},
         body: JSON.stringify({ messagefrombody: userMessage.toString() }),
       });
       
