@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/hackathonchatbot/static/css/main.5a371ced.css",
+    "main.js": "/hackathonchatbot/static/js/main.498ff193.js",
+    "index.html": "/hackathonchatbot/index.html",
+    "main.5a371ced.css.map": "/hackathonchatbot/static/css/main.5a371ced.css.map",
+    "main.498ff193.js.map": "/hackathonchatbot/static/js/main.498ff193.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5a371ced.css",
+    "static/js/main.498ff193.js"
+  ]
+}
